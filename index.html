@@ -3,19 +3,42 @@
     <meta charset="utf-8" />
     <title>Mocha Tests</title>
     <link href="lib/mocha.css" rel="stylesheet" />
+    <link href="lib/index.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sniglet&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- 👍 YOUR HTML HERE 👍 -->
     <div id="displayHere">
-      <img id="inn" onclick="rest(hero)" />
-      <img id="dagger" onclick="addToInventory()" />
-      <img id="bag" onclick="equipWeapon(hero)" />
-      <form>
-        <p>If you wish to change your Hero's name, enter it below:</p>
-        <div>
+      <img
+        id="inn"
+        src="lib/ironman.jpg"
+        alt="Picture of Iron man"
+        onclick="rest(hero)"
+      />
+      <img
+        id="dagger"
+        src="lib/arc.jpg"
+        alt="Picture of a nuclear arc used by Iron man"
+        onclick="addToInventory()"
+      />
+      <img
+        id="bag"
+        src="lib/bag1.jpg"
+        alt="Picture of a bag "
+        onclick="equipWeapon(hero)"
+      />
+      <br></br>
+      <div class="stats" id="displayHeroInfo"></div>
+      <form class="inputform">
+        <p><b>If you wish to change your Hero's name, enter it below:</b></p>
+        <div id="forminfo">
           <label for="name">New name for Hero:</label>
           <input type="text" id="name" name="hero_name_input" />
         </div>
+        <br></br>
         <button type="submit" onclick="changeHeroData(); return false">
           Submit
         </button>
