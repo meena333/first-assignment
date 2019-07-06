@@ -1,0 +1,32 @@
+body {
+  background-color: azure;
+  margin: 1rem;
+  padding: 2rem 0;
+}
+
+img {
+  width: 250px;
+  height: 400px;
+}
+
+.stats {
+  font-family: "Sniglet", cursive;
+  font-size: 20px;
+}
+
+.inputform {
+  font-family: "Sniglet", cursive;
+  font-size: 20px;
+  text-align: center;
+}
+
+button {
+  width: 6rem;
+  height: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+#forminfo {
+  font-size: 15px;
+}
